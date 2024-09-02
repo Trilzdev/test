@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Start a conversation by saying \"Hello\".",
+      "botConversationDescription": "Automated Respose for students of FUPRE",
+      "botId": "556832f7-9675-448b-bfaa-cd4d13a81f3d",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "556832f7-9675-448b-bfaa-cd4d13a81f3d",
+      "webhookId": "37cef7d7-d562-4626-9dad-92c8223ca1a4",
+      "lazySocket": true,
+      "themeName": "galaxy",
+      "botName": "FUPRE Student Support",
+      "avatarUrl": "https://th.bing.com/th/id/R.70557cd9bb8f148d235c775179cfd333?rik=rPaOOD3s%2fm4PwQ&pid=ImgRaw&r=0",
+      "phoneNumber": "08122233433",
+      "emailAddress": "info@fupre.com",
+      "website": "www.fupre.ng.edu",
+      "frontendVersion": "v1",
+      "useSessionStorage": false,
+      "theme": "galaxy",
+      "themeColor": "#2563eb",
+      "allowedOrigins": []
+    });
+  </script>
+</body>
+
+</html>
