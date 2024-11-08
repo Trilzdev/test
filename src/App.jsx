@@ -193,9 +193,9 @@ const App = () => {
       </section>
       <section className='min-h-[600px] bg-black'>
         <div className=' bg-neutral-900  '>
-          <div className=' w-full px-16 py-20 max-sm:px-6'>
+          <div className=' w-full px-16 py-20 max-sm:px-2'>
             <div className='flex justify-between max-sm:flex-wrap max-sm:gap-y-8'>
-              <div className=' bg-[#101d2e] w-[550px] h-[550px] text-center flex flex-col items-center justify-center gap-6 p-16'>
+              <div className=' bg-[#101d2e] w-[550px] h-[550px] text-center flex flex-col items-center justify-center gap-6 p-16 max-sm:px-8'>
                 <div className='text-8xl max-sm:text-6xl text-neutral-300'><GoGoal /></div>
                 <div className='flex flex-col gap-2 '>
                   <p className='text-6xl max-sm:text-2xl font-bebas text-neutral-300'>Vision</p>
@@ -247,8 +247,8 @@ const App = () => {
             <p className=' flex items-center'><MdMail className='text-4xl text-neutral-700 pr-2'/>info@fupre.edu.ng</p>
           </div>
         </div>
-        <div className='bg-neutral-900 py-2 flex max-sm:flex-col max-sm:items-center max-sm:gap-3 max-sm:py-8 gap-x-[600px]'>
-          <p className=' text-neutral-100 pl-24 items-center'>
+        <div className='bg-neutral-900 py-2 flex max-sm:flex-col max-sm:items-center max-sm:gap-3 max-sm:py-8 max-sm:px-4 gap-x-[600px]'>
+          <p className=' text-neutral-100 pl-24 max-sm:pl-0 text-center'>
             Copyright Ⓒ 2024 All rights reserved | Federal University of Petroleum Resources | Powered by <span className='font-bold'>OGHENE MARO</span>
           </p>
           <div className='flex text-neutral-600 text-2xl gap-x-6'>
