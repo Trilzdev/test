@@ -93,7 +93,10 @@ const App = () => {
           showThumbs={false}
           showStatus={false}
           interval={3000}
-          transitionTime={500}>
+          transitionTime={500}
+          swipeScrollTolerance={15}
+          preventMovementUntilSwipeScrollTolerance={true}
+          emulateTouch={true}>
           <div className='h-[700px] relative bg-front'>
             <div className='absolute top-0 left-0 backdrop-brightness-50 w-full h-full flex justify-center items-center max-sm:text-2xl text-neutral-50 font-bebas text-5xl leading-[1.2]'>
               <p>Welcome<br className='font-[]' /> to The first Petroleum University in Africa and the Sixth in the world. <br />Federal University of Petroleum, Effurun.</p>
@@ -181,7 +184,11 @@ const App = () => {
           showThumbs={false}
           showStatus={false}
           interval={3000}
-          transitionTime={500}>
+          transitionTime={500}
+          swipeScrollTolerance={15}
+          preventMovementUntilSwipeScrollTolerance={true}
+          emulateTouch={true}>
+            
           {
             infolist.map((item) => {
               return (
