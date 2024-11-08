@@ -15,7 +15,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import "./App.css"
 import Card from './components/Card'
 import { BiPhone } from 'react-icons/bi'
-import { MdMail } from 'react-icons/md'
+import { MdMail, MdMenu } from 'react-icons/md'
 const infolist = [
   {
     "title": "INVITATION TO THE 2024/2025 POST-UTME SCREENING EXERCISE FOR ADMISSION",
@@ -51,8 +51,8 @@ const App = () => {
     <div className='bg-neutral-200'>
       <div>
         <div className=' sticky top-0'>
-          <div className='bg-neutral-900 py-1 relative flex justify-center items-center text-neutral-300 '>
-            <div className='font-medium text-lg '>This webpage is a demo to illustrate the Customer Support System</div>
+          <div className='bg-neutral-900 py-1 relative flex justify-center max-sm:justify-between max-sm:px-6 max-sm:hidden items-center  text-neutral-300 '>
+            <div className='font-medium text-lg max-sm:text-xs'>This webpage is a demo to illustrate the Customer Support System</div>
             <div className='absolute right-16 flex gap-2 items-center text-neutral-50 font-semibold cursor-pointer'>
               <div className=' rounded-full overflow-hidden'><img src={usa} alt="ss" className='w-6 h-6' /></div>
               <div>ENG</div>
@@ -60,19 +60,22 @@ const App = () => {
             </div>
           </div>
         </div>
-        <header className=' flex items-center justify-between py-2 bg-neutral-100 px-16 '>
-          <div className=' h-30'>
+        <header className=' flex items-center justify-between py-2 bg-neutral-100 px-16 max-sm:px-8 '>
+          <div className=' h-30 max-sm:h-16'>
             <img src={logo} alt="" className='h-full mix-blend-multiply' />
           </div>
-          <div className='font-semibold text-xl flex flex-col gap-y-4 '>
-            <div className='flex gap-x-8 justify-end text-neutral-800'>
+          <div className='font-semibold text-xl flex flex-col gap-y-4'>
+            <div className=' text-neutral-800 sm:hidden text-3xl'>
+              <MdMenu/>
+            </div>
+            <div className='flex gap-x-8 justify-end text-neutral-800 max-sm:hidden'>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Convocation</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>FUPRE Inovvation Projects</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Email</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Careers</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Staff</a>
             </div>
-            <div className='flex gap-x-8 justify-end text-neutral-800'>
+            <div className='flex gap-x-8 justify-end text-neutral-800 max-sm:hidden'>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Programmes</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Colleges</a>
               <a href="#" className='hover:bg-[#3b1c1c] p-1 rounded-sm px-2 duration-200 hover:text-neutral-300'>Academics</a>
@@ -92,15 +95,15 @@ const App = () => {
           interval={3000}
           transitionTime={500}>
           <div className='h-[700px] relative bg-front'>
-            <div className='absolute top-0 left-0 backdrop-brightness-50 w-full h-full flex justify-center items-center text-neutral-50 font-bebas text-5xl leading-[1.2]'>
+            <div className='absolute top-0 left-0 backdrop-brightness-50 w-full h-full flex justify-center items-center max-sm:text-2xl text-neutral-50 font-bebas text-5xl leading-[1.2]'>
               <p>Welcome<br className='font-[]' /> to The first Petroleum University in Africa and the Sixth in the world. <br />Federal University of Petroleum, Effurun.</p>
             </div>
           </div>
           <div className='h-[700px] relative bg-class'>
             <div className='absolute top-0 left-0 backdrop-brightness-50 w-full h-full flex flex-col gap-3 justify-center items-center text-neutral-50 '>
-              <p className='font-bebas text-5xl'>Providing research and training in Oil and Gas</p>
+              <p className='font-bebas text-5xl max-sm:text-2xl'>Providing research and training in Oil and Gas</p>
               <div>
-                <button className='text-2xl bg-neutral-950 py-4 font-semibold text-neutral-200 hover:bg-[#72727269] px-6 duration-200 ease-in-out'>
+                <button className='text-2xl max-sm:text-base bg-neutral-950 py-4 font-semibold text-neutral-200 hover:bg-[#72727269] px-6 duration-200 ease-in-out'>
                   <p>Start your journey</p>
                 </button>
               </div>
@@ -108,7 +111,7 @@ const App = () => {
           </div>
         </Carousel>
       </section>
-      <section className='bg-neutral-100 px-32 py-24' >
+      <section className='bg-neutral-100 px-32 py-24 max-sm:hidden' >
         <div className='relative'>
           <div className='p-10  border-8 border-l-0 border-neutral-900 flex flex-col gap-8 absolute top-1/2 -translate-y-1/2 bg-neutral-100 '>
             <div className='flex flex-col gap-3'>
@@ -120,16 +123,16 @@ const App = () => {
               <button className='bg-neutral-900 text-neutral-50 px-6 py-3 text-xl'>Apply Now</button>
             </div>
           </div>
-          <div className='h-[600px] overflow-hidden'>
+          <div className='min-h-[600px] overflow-hidden'>
             <img src={bg1} alt="" />
           </div>
         </div>
       </section>
-      <section className=' bg-neutral-900 border-b-8 border-b-[#1b1a24] py-16 px-16'>
-        <div className='pl-16 pb-8'>
-          <p className='font-bebas text-6xl style-title text-[#a39ac0]'>Articles</p>
+      <section className=' bg-neutral-900 border-b-8 border-b-[#1b1a24] py-16 px-16 max-sm:p-8'>
+        <div className='pl-16 pb-8 max-sm:pl-8'>
+          <p className='font-bebas text-6xl style-title text-[#a39ac0] max-sm:text-4xl'>Articles</p>
         </div>
-        <div className=' flex justify-evenly'>
+        <div className=' flex justify-evenly max-sm:flex-wrap gap-y-8'>
           <div className=' squircle w-[500px] bg-neutral-100 flex flex-col justify-between gap-6 pb-8'>
             <div className='h-60 overflow-hidden'>
               <img className='w-full' src={donate} alt="" />
@@ -190,26 +193,26 @@ const App = () => {
       </section>
       <section className='min-h-[600px] bg-black'>
         <div className=' bg-neutral-900  '>
-          <div className=' w-full h- px-16 py-20'>
-            <div className='flex justify-between'>
+          <div className=' w-full px-16 py-20 max-sm:px-6'>
+            <div className='flex justify-between max-sm:flex-wrap max-sm:gap-y-8'>
               <div className=' bg-[#101d2e] w-[550px] h-[550px] text-center flex flex-col items-center justify-center gap-6 p-16'>
-                <div className='text-8xl text-neutral-300'><GoGoal /></div>
+                <div className='text-8xl max-sm:text-6xl text-neutral-300'><GoGoal /></div>
                 <div className='flex flex-col gap-2 '>
-                  <p className='text-6xl font-bebas text-neutral-300'>Vision</p>
+                  <p className='text-6xl max-sm:text-2xl font-bebas text-neutral-300'>Vision</p>
                   <p className='text-2xl text-neutral-400'>The Vision of the University is to be the premier international institution with state-of-the-art facilities to provide for the petroleum and allied sectors, world-class education, training, research, consultancy and extension services.</p>
                 </div>
               </div>
               <div className=' bg-[#3b1c1c] w-[550px] h-[550px] text-center flex flex-col items-center justify-center gap-6 p-16'>
-                <div className='text-8xl text-neutral-300'><GoGoal /></div>
+                <div className='text-8xl max-sm:text-6xl text-neutral-300'><GoGoal /></div>
                 <div className='flex flex-col gap-2 '>
-                  <p className='text-6xl font-bebas text-neutral-300'>MISSION</p>
+                  <p className='text-6xl max-sm:text-2xl font-bebas text-neutral-300'>MISSION</p>
                   <p className='text-2xl text-neutral-400'>The mission of the University is to develop top-quality human resources, provide advanced education and training, conduct research and consultancy, and lead in promoting economic development within the oil, gas, and energy industry and the broader community.</p>
                 </div>
               </div>
               <div className=' bg-[#2e2314] w-[550px] h-[550px] text-center flex flex-col items-center justify-center gap-6 p-16'>
-                <div className='text-8xl text-neutral-300'><GoGoal /></div>
+                <div className='text-8xl max-sm:text-6xl text-neutral-300'><GoGoal /></div>
                 <div className='flex flex-col gap-2 '>
-                  <p className='text-6xl font-bebas text-neutral-300'>Philosophy</p>
+                  <p className='text-6xl max-sm:text-2xl font-bebas text-neutral-300'>Philosophy</p>
                   <p className='text-2xl text-neutral-400'>To promote the advancement of knowledge and produce graduates who are technopreneurs with concern for the promotion of environmentally friendly technological solutions in the practice of their profession.</p>
                 </div>
               </div>
@@ -218,21 +221,21 @@ const App = () => {
         </div>
       </section>
       <footer>
-        <div className='h-[400px] px-16 pr-32 flex gap-36 items-center justify-between'>
+        <div className='min-h-[400px] px-16 pr-32 flex gap-x-36 max-sm:gap-y-8 items-center justify-between max-sm:justify-center max-sm:flex-col max-sm:pr-16'>
           <div className=' '>
-            <img className='mix-blend-multiply h-80' src={sitelogo} alt="" srcset="" />
+            <img className='mix-blend-multiply h-80 max-sm:h-20' src={sitelogo} alt="" srcset="" />
           </div>
-          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col'>
+          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col max-sm:hidden'>
             <p className=' text-2xl text-blue-950'>Links</p>
           </div>
-          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col'>
+          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col max-sm:hidden'>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Home</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Programmes</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Academics</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Portals</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>About Us</a>
           </div>
-          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col'>
+          <div className='text-neutral-800 text-center font-medium text-xl gap-2 flex flex-col max-sm:hidden'>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Convocation</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>FUPRE Inovvation Projects</a>
             <a href="#" className='hover:translate-x-2 duration-200 hover:scale-105 hover:text-neutral-600'>Email</a>
@@ -244,7 +247,7 @@ const App = () => {
             <p className=' flex items-center'><MdMail className='text-4xl text-neutral-700 pr-2'/>info@fupre.edu.ng</p>
           </div>
         </div>
-        <div className='bg-neutral-900 py-2 flex gap-x-[600px]'>
+        <div className='bg-neutral-900 py-2 flex max-sm:flex-col max-sm:items-center max-sm:gap-3 max-sm:py-8 gap-x-[600px]'>
           <p className=' text-neutral-100 pl-24 items-center'>
             Copyright Ⓒ 2024 All rights reserved | Federal University of Petroleum Resources | Powered by <span className='font-bold'>OGHENE MARO</span>
           </p>
